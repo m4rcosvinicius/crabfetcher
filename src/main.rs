@@ -13,12 +13,14 @@ fn main() {
         Option::Some(arg) => match arg.as_str() {
             "--ferris" | "-f" => exec(2, CORRO_COLOR),
             "--corro" | "-c" => exec(1, FERRIS_COLOR),
-            _ => eprintln!("Invalid ascii art")
+            "--help" => {
+                help();
+            }
+            _ => {
+                help();
+            }
         },
-        Option::None => {
-            println!("--ferris OR -f => Use ferris ascii");
-            println!("--corro  OR -c => Use corro ascii");
-        }
+        Option::None => exec(2, CORRO_COLOR)
     };
 }
 
@@ -30,4 +32,11 @@ fn exec(ascii_art: i32, color: &str) {
                   ascii.lines().collect(),
                   all_infos.lines().collect(),
     ]).base_tabsize_in(0));
+}
+
+fn help() {
+    println!("crabfetcher --ferris => Use ferris ascii art.");
+    println!("crabfetcher --corro  => Use corro ascii art.");
+    println!("crabfetcher --help   => Show help.");
+    println!("You can use crabfetcher -c or crabfetcher -f too!");
 }
