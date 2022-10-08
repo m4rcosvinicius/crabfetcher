@@ -1,5 +1,1 @@
-```
-https://docs.rs/clap/latest/clap/
-```
-- [ ] https://gitlab.com/jschx/ufetch
-- [ ] Create the --ferris and --corro to define which ascii art will be printed.
+To use crabfetcher, clone it and do: cargo build --release.
