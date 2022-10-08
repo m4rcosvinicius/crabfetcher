@@ -1,1 +1,1 @@
-To use crabfetcher, clone it and do: cargo build --release.
+To use it, install from <a href="https://crates.io/">crates.io</a>
