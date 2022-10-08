@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description = "A fetcher written in rust"
 license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Eporax/crabfetcher"
 
 [dependencies]
 columns = "0.1.0"

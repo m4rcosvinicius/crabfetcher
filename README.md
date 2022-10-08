@@ -1,1 +1,4 @@
-To use it, install from <a href="https://crates.io/">crates.io</a>
+crabfetcher --ferris => Use ferris ascii art.
+crabfetcher --corro  => Use corro ascii art.
+
+You can use crabfetcher -c or crabfetcher -f.
